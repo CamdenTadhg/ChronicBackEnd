@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": {
+        "keywords": {
+            "type": "array"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "keywords"
+    ]
+}

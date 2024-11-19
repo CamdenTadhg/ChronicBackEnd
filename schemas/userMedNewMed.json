@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "medication": {
+            "type": "string"
+        },
+        "dosageNum": {
+            "type": "number",
+            "minimum": 0
+        },
+        "dosageUnit": {
+            "type": "string"
+        },
+        "timeOfDay": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["AM", "Midday", "PM", "Evening"]
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "medication", 
+        "dosageNum",
+        "dosageUnit", 
+        "timeOfDay"
+    ]
+}

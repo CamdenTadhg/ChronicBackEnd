@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "symptomId": {
+            "type": "number",
+            "minimum": 1
+        },
+        "trackDate": {
+            "type": "string",
+            "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+            "format": "date",
+            "formatMaximum": "now"
+        },
+        "timespan": {
+            "type": "string",
+            "enum": ["12-4 AM", "4-8 AM", "8 AM-12 PM", "12-4 PM", "4-8 PM", "8 PM-12 AM"]
+        },
+        "severity": {
+            "type": "number",
+            "maximum": 5,
+            "minimum": 0
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "symptomId",
+        "trackDate",
+        "timespan", 
+        "severity"
+    ]
+}

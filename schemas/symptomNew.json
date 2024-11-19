@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": {
+        "symptomName": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "symptomName"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": {
+        "medicationName": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "medicationName"
+    ]
+}

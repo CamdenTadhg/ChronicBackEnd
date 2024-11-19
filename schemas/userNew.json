@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "email": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+        },
+        "password": {
+            "type": "string", 
+            "pattern": "^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\[\\]{};':\"\\\\|,.<>/?`~\\-]).{8,}$"
+
+        },
+        "name" : {
+            "type": "string"
+        }, 
+        "isAdmin": {
+            "type": "boolean"
+        }        
+    },
+    "additionalProperties": false,
+    "required": [
+        "email",
+        "password",
+        "name", 
+        "isAdmin"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "properties": {
+        "diagnosisName": {
+            "type": "string"
+        },
+        "synonyms": {
+            "type": "array"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "diagnosisName",
+        "synonyms"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "medId": {
+            "type": "number",
+            "minimum": 1
+        },
+        "trackDate": {
+            "type": "string",
+            "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+            "format": "date",
+            "formatMaximum": "now"
+        },
+        "timeOfDay": {
+            "type": "string",
+            "enum": ["AM", "Midday", "PM", "Evening"]
+        },
+        "number": {
+            "type": "number",
+            "minimum": 0
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "medId",
+        "trackDate",
+        "timeOfDay", 
+        "number"
+    ]
+}
