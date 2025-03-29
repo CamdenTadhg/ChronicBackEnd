@@ -24,6 +24,7 @@ router.get('/articleIds', async function(req, res, next){
         if (keywords.length === 1 && keywords[0] === undefined) {
             throw new BadRequestError('keywords are required.');
         }
+        console.log(keywords)
         const validator = jsonschema.validate(keywords, getArticleIdsSchema);
         if (!validator.valid){
             const errs = validator.errors.map(e => e.stack);
